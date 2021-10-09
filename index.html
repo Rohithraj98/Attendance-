@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Attendance</title>
-    <img src="sensen.png" width="100" height="50">
+    <title>Super Bowl Bar Chart</title>
     <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
   </head>
   <body>
@@ -20,7 +19,7 @@
 
           // create data variable for the chart
           var data = {
-            header: ["total login","late logins"],
+            header: ["total logins", "late logins"],
             rows: myJson.data
           }
 
@@ -31,7 +30,7 @@
           chart.data(data);
 
           // set the chart title
-          chart.title("Graph");
+          chart.title("Super Bowl Wins");
 
           // draw
           chart.container("container");
