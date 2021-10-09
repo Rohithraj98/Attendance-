@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      p.solid {border-style: solid;}
-    <title>SenSen</title>
-      <h1>hello</h1>
+    <title>Super Bowl Bar Chart</title>
     <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
-    </style>  
-   </head>
+  </head>
   <body>
     <div id="container" style="width: 100%; height: 100%"></div>
-          
-  
     <script>
-        
       // Start the Chart creation
       anychart.onDocumentReady(function() {
 
@@ -26,7 +19,7 @@
 
           // create data variable for the chart
           var data = {
-            header: ["name","login"],
+            header: ["name", "login"],
             rows: myJson.data
           }
 
@@ -37,14 +30,13 @@
           chart.data(data);
 
           // set the chart title
-          chart.title("abc");
+          chart.title("Super Bowl Wins");
 
           // draw
           chart.container("container");
           chart.draw();
         });
       });
-      </p>
     </script>
   </body>
 </html>
